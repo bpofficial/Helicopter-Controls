@@ -73,7 +73,7 @@ void create_data_str(char* buff) {
     return;
   }
   
-  if ((temp = sprintf(&buff[n], "T:%d\n", ctrl.throttle)) > 0) {
+  if ((temp = sprintf(&buff[n], "T:%d.\n", ctrl.throttle)) > 0) {
     n += temp; 
   } else {
     strcpy(buff, "X,X,X,X,X");
